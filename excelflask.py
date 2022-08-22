@@ -51,7 +51,7 @@ def upload_file():
     bo=False
     #data=jsonify(dataset.export('json'))
     #print(str(data)+"salem")
-    MyNewList=["Invoice","MasterData","ProfitLoss","EnironmentalPerformance","HumanResource"]
+    MyNewList=["Invoice","Master Data","Profit and Loss","Environmental performance","Human Resource"]
     if category in MyNewList:
         bo=True
 
@@ -90,16 +90,22 @@ def upload_file():
     DoesNotContainList=list(set(toScrapList) - set(ContainList))
     print(DoesNotContainList)
 
-    thisdict2={
-        "Does not contain list":DoesNotContainList
-    }
+
+    if bo:
+        thisdict2={
+        'Does not contain list':DoesNotContainList
+        }
+    else:
+        thisdict2={"404 ERROR":"Category Not found"}    
                  
 
 
-
+    s = ','.join(DoesNotContainList)
+    if s=="":
+        s="Test"
 
     
-    return (thisdict2)
+    return (s)
     
 
     
