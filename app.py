@@ -3,6 +3,7 @@ import tempfile
 
 from flask_restful import Api, Resource 
 
+
 from flask import request, jsonify
 from tablib import Dataset
 import os
@@ -51,7 +52,7 @@ def upload_file():
     bo=False
     #data=jsonify(dataset.export('json'))
     #print(str(data)+"salem")
-    MyNewList=["Invoice","Master Data","Profit and Loss","Environmental performance","Human Resource"]
+    MyNewList=["Invoice","Master Data","Profit and Loss","Environmental Performance","Human Resource"]
     if category in MyNewList:
         bo=True
 
@@ -59,10 +60,10 @@ def upload_file():
     
 
     thisdict = {"InvoiceList":["Demande d'énergie primaire","Total Electricité","Taxes et contributions","Montant TTC à payer","Consommation","Conso Chauffage","Conso CVC","Conso Froid","Conso Eclairage","Conso auxiliaire","Emission GES: Scope 1 + 2","Energies renouvelables"],
-    "MasterDataList":["Property","Region","Address","Floor Area (m2)","Construction Year","Type Du Batiment"],
-    "ProfitLossList":["Revenue","Total Operating Expenses","Accounts Receivable","Inventory","Property & Equipment","Total Assets","CapEx"],
-    "EnironmentalPerformanceList":['Area','Type Emission','Type Conso','Total','Unit'],
-    "HumanResourceList":["Climate change mitigation","Climate change adaptation","Sustainable use and protection of water and marine resources","Transition to circular economy","Pollution prevention and control","Protection and restoration of biodiversity and ecosystems"]
+    "Master DataList":["Property","Region","Address","Floor Area (m2)","Construction Year","Type Du Batiment"],
+    "Profit and LossList":["Revenue","Total Operating Expenses","Accounts Receivable","Inventory","Property & Equipment","Total Assets","CapEx"],
+    "Environmental performanceList":['Area','Type Emission','Type Conso','Total','Unit'],
+    "Human ResourceList":["Climate change mitigation","Climate change adaptation","Sustainable use and protection of water and marine resources","Transition to circular economy","Pollution prevention and control","Protection and restoration of biodiversity and ecosystems"]
     }
 
 
