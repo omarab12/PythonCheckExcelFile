@@ -62,7 +62,7 @@ def upload_file():
     thisdict = {"InvoiceList":["Demande d'énergie primaire","Total Electricité","Taxes et contributions","Montant TTC à payer","Consommation","Conso Chauffage","Conso CVC","Conso Froid","Conso Eclairage","Conso auxiliaire","Emission GES: Scope 1 + 2","Energies renouvelables"],
     "Master DataList":["Property","Region","Address","Floor Area (m2)","Construction Year","Type Du Batiment"],
     "Profit and LossList":["Revenue","Total Operating Expenses","Accounts Receivable","Inventory","Property & Equipment","Total Assets","CapEx"],
-    "Environmental performanceList":['Area','Type Emission','Type Conso','Total','Unit'],
+    "Environmental PerformanceList":['Area','Type Emission','Type Conso','Total','Unit'],
     "Human ResourceList":["Climate change mitigation","Climate change adaptation","Sustainable use and protection of water and marine resources","Transition to circular economy","Pollution prevention and control","Protection and restoration of biodiversity and ecosystems"]
     }
 
